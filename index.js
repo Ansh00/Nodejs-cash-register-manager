@@ -1,14 +1,14 @@
 const readlineSync = require("readline-sync");
 
-var bill = readlineSync.question("Please enter the bill amount\n");
+var bill = readlineSync.question("Enter the bill amount\n");
 
 cashList = [1,5,10,20,100,500,2000];
 
-var cash = readlineSync.question("Please enter the cash\n");
+var cash = readlineSync.question("Enter the cash\n");
 
 var cashReturn = cash - bill;
 
-console.log("Please Return : ");
+console.log("Return Change : ");
 
 while(cashReturn > 0)
 {
